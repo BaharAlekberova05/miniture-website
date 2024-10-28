@@ -1,0 +1,179 @@
+@media (min-width: 320px) and (max-width: 760px) {
+  .header-sec {
+    margin-bottom: 0px !important;
+    .header-left {
+      .fa-bars {
+        display: block !important;
+      }
+    }
+  }
+
+  nav {
+    display: none !important;
+  }
+
+  .woodland {
+    flex-direction: column;
+
+    .woodland-img-div {
+      width: 100%;
+    }
+
+    .woodland-info {
+      width: 100%;
+      align-items: center;
+
+      & span:nth-child(2) {
+        font-size: 36px;
+        text-align: center;
+      }
+    }
+  }
+
+  .cozy {
+    & h1 {
+      font-size: 24px !important;
+    }
+
+    .cozy-grid-1 {
+      grid-template-columns: 1fr;
+
+      & .grid-item:nth-child(2),
+      .grid-item:nth-child(3),
+      .grid-item:nth-child(4) {
+        display: none;
+      }
+    }
+
+    .cozy-grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+
+      & .grid-item:nth-child(3),
+      .grid-item:nth-child(4),
+      .grid-item:nth-child(5),
+      .grid-item:nth-child(6) {
+        display: none;
+      }
+    }
+  }
+
+  .living-room {
+    & h1 {
+      font-size: 24px !important;
+    }
+
+    .living-room-grid {
+      grid-template-columns: 1fr;
+
+      .grid-item:nth-child(2),
+      .grid-item:nth-child(3),
+      .grid-item:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+
+  .view-more-btn {
+    margin-bottom: 36px;
+  }
+
+  .treasures {
+    gap: 24px;
+    & p {
+      font-size: 24px;
+    }
+
+    .timer {
+      gap: 10px;
+    }
+  }
+
+  .cant-miss {
+    & h1 {
+      font-size: 24px;
+    }
+
+    .cant-miss-grid {
+      grid-template-columns: 1fr;
+
+      .grid-item:nth-child(2),
+      .grid-item:nth-child(3),
+      .grid-item:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .header-sec {
+    .header-left {
+      .fa-bars {
+        display: block !important;
+      }
+    }
+  }
+
+  nav {
+    display: none !important;
+  }
+
+  .woodland {
+    /* flex-direction: column; */
+
+    .woodland-img-div {
+      width: 100%;
+    }
+
+    .woodland-info {
+      width: 100%;
+
+      & span:nth-child(2) {
+        font-size: 48px;
+      }
+    }
+  }
+
+  .cozy {
+    .cozy-grid-1 {
+      grid-template-columns: repeat(3, 1fr);
+
+      .grid-item:nth-child(4) {
+        display: none;
+      }
+    }
+
+    .cozy-grid-2 {
+      grid-template-columns: repeat(4, 1fr);
+
+      .grid-item:nth-child(5),
+      .grid-item:nth-child(6) {
+        display: none;
+      }
+    }
+  }
+
+  .living-room {
+    .living-room-grid {
+      grid-template-columns: repeat(3, 1fr);
+
+      .grid-item:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+
+  .view-more-btn {
+    margin-bottom: 40px;
+  }
+
+  .cant-miss {
+    .cant-miss-grid {
+      grid-template-columns: repeat(3, 1fr);
+
+      .grid-item:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+}

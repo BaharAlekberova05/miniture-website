@@ -1,0 +1,91 @@
+.cozy-grid-1,
+.living-room-grid,
+.cant-miss-grid {
+  .grid-item:hover {
+    .hover {
+      display: flex;
+    }
+  }
+}
+
+.hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+
+  .first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+
+    & i {
+      background: #fff;
+      border-radius: 999px;
+      padding: 10px;
+    }
+  }
+
+  .second {
+    margin-bottom: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    border-radius: 999px;
+    padding: 14px;
+
+    & i {
+      color: #fff;
+    }
+  }
+}
+
+.cozy-grid-2 {
+  .grid-item {
+    .grid-item-img:hover {
+      & img {
+        transform: scale(1.1);
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+
+.cozy-grid-1, .cozy-grid-2, .living-room-grid, .cant-miss-grid {
+  position: relative;
+  overflow: hidden;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 999px;
+  padding: 12px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s;
+}
+
+.arrow-left {
+  left: 10px; 
+}
+
+.arrow-right {
+  right: 10px; 
+}
+
+.arrow:hover {
+  background-color: rgb(255, 168, 50); 
+  color: #fff;
+}

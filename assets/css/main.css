@@ -1,0 +1,261 @@
+.woodland {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  margin-bottom: 70px;
+
+  .woodland-img-div {
+    width: 45%;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  .woodland-info {
+    width: 55%;
+    display: flex;
+    flex-flow: column wrap;
+
+    & span:nth-child(1) {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    & span:nth-child(2) {
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 65px;
+      margin-bottom: 12px;
+    }
+
+    & span:nth-child(3) {
+      color: #666;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+
+    & button {
+      background: rgb(255, 168, 50);
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 20px 12px;
+      width: 200px;
+      height: 60px;
+      cursor: pointer;
+    }
+
+    & button:hover {
+      background: #000;
+      transition: all 0.6s;
+    }
+  }
+}
+
+/* COZY */
+.cozy,
+.living-room,
+.cant-miss {
+  margin-bottom: 50px;
+
+  & h1 {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .cozy-grid-1,
+  .living-room-grid,
+  .cant-miss-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 85px;
+
+    .grid-item {
+      display: flex;
+      flex-flow: column wrap;
+
+      .grid-item-img {
+        /* height: 300px; */
+        margin-bottom: 18px;
+        background-position: center;
+        position: relative;
+
+        & img {
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+          object-fit: cover;
+          border-radius: 18px;
+        }
+      }
+
+      .grid-item-info {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 14px;
+
+        & a {
+          font-weight: 400;
+        }
+
+        & a:hover {
+          color: rgb(255, 168, 50);
+        }
+
+        & span {
+          font-weight: 400;
+          color: rgb(24, 24, 24, 0.8);
+        }
+      }
+    }
+  }
+
+  .cozy-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    margin-bottom: 80px;
+
+    .grid-item {
+      display: flex;
+      flex-flow: column wrap;
+
+      .grid-item-img {
+        /* height: 300px; */
+        margin-bottom: 18px;
+        border-radius: 990px;
+        position: relative;
+
+        & img {
+          width: 100%;
+          height: 100%;
+          border-radius: 990px;
+          object-fit: cover;
+        }
+      }
+
+      .grid-item-info {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        gap: 14px;
+
+        & a {
+          font-weight: 500;
+          font-size: 18px;
+        }
+
+        & a:hover {
+          color: rgb(255, 168, 50);
+        }
+
+        & span {
+          font-weight: 400;
+          color: rgb(24, 24, 24, 0.8);
+        }
+      }
+    }
+  }
+}
+
+/* VIEW MORE BTN */
+
+.view-more-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+
+  & button {
+    background: transparent;
+    border: 1px solid #ececec;
+    border-radius: 50px;
+    padding: 14px 28px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  & button:hover {
+    background: rgb(255, 168, 50);
+    color: white;
+    transition: all 0.3s;
+  }
+}
+
+/* TREASURES */
+
+.treasures {
+  margin-bottom: 50px;
+  background-image: url("/assets/img/bg-image.png");
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 0;
+  border-radius: 12px;
+
+  & span:nth-child(1) {
+    font-size: 20px;
+    color: #666;
+  }
+
+  & p {
+    font-size: 48px;
+    width: 460px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .timer {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    & div {
+      width: 90px;
+      height: 90px;
+      background: #fff;
+      border-radius: 900px;
+      border: 1px solid #ececec;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      & span:nth-child(1) {
+        font-size: 26px;
+        font-weight: 500;
+        color: #181818;
+      }
+
+      & span:nth-child(2) {
+        font-size: 14px;
+        color: #666666;
+      }
+    }
+  }
+
+  & button {
+    border: none;
+    border-radius: 50px;
+    background: #ffa832;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 40px;
+    cursor: pointer;
+  }
+
+  & button:hover {
+    background: #000;
+    transition: all 0.3s;
+  }
+}
