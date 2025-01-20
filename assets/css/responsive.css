@@ -38,7 +38,7 @@
     .cozy-grid-1 {
       grid-template-columns: 1fr;
 
-      & .grid-item:nth-child(2),
+      .grid-item:nth-child(2),
       .grid-item:nth-child(3),
       .grid-item:nth-child(4) {
         display: none;
